@@ -23,7 +23,7 @@ public class ModMenuIntegration implements ModMenuApi {
 
             general.addEntry(entryBuilder.startBooleanToggle(
                             Component.literal("Enabled"), config.enabled)
-                    .setDefaultValue(true)
+                    .setDefaultValue(false)
                     .setTooltip(Component.literal("Enable/disable Lava ESP overlay"))
                     .setSaveConsumer(val -> config.enabled = val)
                     .build());
@@ -44,7 +44,7 @@ public class ModMenuIntegration implements ModMenuApi {
 
             general.addEntry(entryBuilder.startFloatField(
                             Component.literal("Marker Size"), config.markerSize)
-                    .setDefaultValue(0.98f)
+                    .setDefaultValue(1f)
                     .setMin(0.1f).setMax(1.0f)
                     .setSaveConsumer(val -> config.markerSize = val)
                     .build());

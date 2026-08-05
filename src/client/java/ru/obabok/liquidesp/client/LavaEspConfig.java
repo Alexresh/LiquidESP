@@ -11,7 +11,7 @@ public class LavaEspConfig {
     public int scanRadius = 24;
     public int updateIntervalMs = 500;
     public float markerSize = 1f;
-    public boolean enabled = true;
+    public boolean enabled = false;
 
     public int markerColor = 0x59FF4D00;
 

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "liquidesp",
+  "version": "${version}",
+  "name": "LiquidESP",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/liquidesp/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.obabok.liquidesp.client.LiquidespClient"
+    ],
+    "modmenu": [
+      "ru.obabok.liquidesp.client.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "liquidesp.mixins.json",
+    {
+      "config": "liquidesp.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

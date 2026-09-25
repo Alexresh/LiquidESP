@@ -1,6 +1,6 @@
 # LiquidESP
 
-Client-side ESP overlay for lava sources in Minecraft 1.21.4 (Fabric). Renders semi-transparent markers through blocks to help locate lava underground.
+Client-side ESP overlay for lava sources in Minecraft 1.21.4 & 26.3 (Fabric). Renders semi-transparent markers through blocks to help locate lava underground.
 
 ## Features
 
